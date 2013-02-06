@@ -14,6 +14,10 @@ To make an observable to persist it's value to the `localStorage`. Extend it wit
     // Will automatically load and save the array if it exists in the localStorage
     this.persistedArray = ko.observableArray().extend({ persist: 'persistedArray' });
 
+## Contributions
+
+Feel free to fork the [project at github](http://github.com/spoike/knockout.persist) and send pull requests if you want to add any features.
+
 ## License
 
 This project is licensed under the MIT license. For more info, go to http://opensource.org/licenses/MIT.
