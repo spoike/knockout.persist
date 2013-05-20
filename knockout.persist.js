@@ -8,7 +8,7 @@
         var initialValue = target();
 
         // Load existing value from localStorage if set
-        if (key && localStorage.hasOwnProperty(key)) {
+        if (key && localStorage.getItem(key) !== null) {
             try {
                 initialValue = JSON.parse(localStorage.getItem(key));
             } catch (e) {
