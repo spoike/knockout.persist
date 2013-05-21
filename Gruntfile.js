@@ -76,7 +76,7 @@ module.exports = function(grunt) {
       },
       src: {
         files: '<%= jshint.src.src %>',
-        tasks: ['jshint:src']
+        tasks: ['jshint:src', 'karma:unit:run']
       },
       test: {
         files: '<%= jshint.test.src %>',
@@ -95,6 +95,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-karma');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'karma:continuous', 'clean', 'concat', 'uglify']);
-
+  grunt.registerTask('test', ['karma:continuous']);
+  grunt.registerTask('default', ['jshint', 'test', 'clean', 'concat', 'uglify']);
 };
