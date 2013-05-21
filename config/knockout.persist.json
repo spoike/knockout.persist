@@ -1,0 +1,26 @@
+{
+  "name": "knockout.persist",
+  "title": "Knockout Persist",
+  "description": "Knockout extender on localstorage",
+  "version": "0.1.0",
+  "homepage": "https://github.com/spoike/knockout.persist",
+  "author": {
+    "name": "Mikael Brassman",
+    "email": "mishakun@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/spoike/knockout.persist.git"
+  },
+  "bugs": "https://github.com/spoike/knockout.persist/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/spoike/knockout.persist/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "knockout": "*"
+  },
+  "keywords": []
+}

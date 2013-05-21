@@ -2,6 +2,12 @@
 
 A simple persistance extender for the [knockout.js](https://github.com/SteveSanderson/knockout) project. At the moment uses only localStorage if it exists in the browser.
 
+## Getting Started
+Download the [production version][min] or the [development version][max].
+
+[min]: https://raw.github.com/spoike/knockout.persist/master/dist/knockout.persist.min.js
+[max]: https://raw.github.com/spoike/knockout.persist/master/dist/knockout.persist.js
+
 ## Usage
 
 This extender can be used as any other [knockout.js extender](http://knockoutjs.com/documentation/extenders.html). Include the javascript file, `knockout.persist.js`, in your script imports or script bundle.
@@ -21,3 +27,4 @@ Feel free to fork the [project at github](http://github.com/spoike/knockout.pers
 ## License
 
 This project is licensed under the MIT license. For more info, go to http://opensource.org/licenses/MIT.
+
