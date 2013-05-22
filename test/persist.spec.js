@@ -1,11 +1,10 @@
-var should = chai.should(),
-	toJSON = function(value) { return ko.toJSON(value); },
+var toJSON = function(value) { return ko.toJSON(value); },
 	parseJSON = function(json) { return JSON.parse(json); };
 
 describe('knockout.persist', function() {
 	
 	it('assumes that localstorage is available', function() {
-		should.exist(localStorage);
+		expect(localStorage).toBeDefined();
 	});
 	
 	describe('when localstorage is empty', function() {
@@ -17,15 +16,14 @@ describe('knockout.persist', function() {
 		
 		it('should not put values on localstorage when initialized', function() {
 			o = ko.observable('').extend({ persist: key });
-			should.not.exist(localStorage[key]);
+			expect(localStorage[key]).not.toBeDefined();
 		});
 		
 		it('should set localstorage with new value when changed', function() {
 			var o;
 			o = ko.observable('').extend({ persist: key });
 			o(value);
-			should.exist(localStorage[key]);
-			parseJSON(localStorage[key]).should.equal(value);
+			expect(parseJSON(localStorage[key])).toBe(value);
 		});
 		
 		describe('when localstorage has persisted value', function() {
@@ -36,7 +34,7 @@ describe('knockout.persist', function() {
 			
 			it('should load with persisted value', function() {
 				o = ko.observable('').extend({ persist: key });
-				o().should.equal(value);
+				expect(o()).toBe(value);
 			});
 			
 		});

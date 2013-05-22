@@ -8,9 +8,8 @@ basePath = '';
 
 // list of files / patterns to load in the browser
 files = [
-  MOCHA,
-  MOCHA_ADAPTER,
-  '../libs/chai.js',
+  JASMINE,
+  JASMINE_ADAPTER,
   '../libs/knockout/knockout-2.2.1.js',
   '../src/knockout.persist.js',
   '../test/*.spec.js'

@@ -60,6 +60,7 @@ module.exports = function(grunt) {
       },
       unit: {
         background: true,
+        browsers: ['PhantomJS']
       },
       continuous: {
         singleRun: true,
