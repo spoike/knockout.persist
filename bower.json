@@ -1,0 +1,16 @@
+{
+  "name": "knockout.persist",
+  "version": "0.1.0",
+  "main": "dist/knockout.persist.min.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test",
+    "libs",
+    "config"
+  ],
+  "dependencies": {
+    "knockout": "knockout.js"
+  }
+}
