@@ -8,6 +8,10 @@ Download the [production version][min] or the [development version][max].
 [min]: https://raw.github.com/spoike/bower-knockout.persist/master/knockout.persist.min.js
 [max]: https://raw.github.com/spoike/bower-knockout.persist/master/knockout.persist.js
 
+You can also install with [bower](http://bower.io/) package manager:
+
+    bower install knockout.persist
+
 ## Usage
 
 This extender can be used as any other [knockout.js extender](http://knockoutjs.com/documentation/extenders.html). Include the javascript file, `knockout.persist.js`, in your script imports or script bundle.
