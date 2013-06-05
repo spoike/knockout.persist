@@ -5,8 +5,8 @@ A simple persistance extender for the [knockout.js](https://github.com/SteveSand
 ## Getting Started
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/spoike/knockout.persist/master/dist/knockout.persist.min.js
-[max]: https://raw.github.com/spoike/knockout.persist/master/dist/knockout.persist.js
+[min]: https://raw.github.com/spoike/bower-knockout.persist/master/knockout.persist.min.js
+[max]: https://raw.github.com/spoike/bower-knockout.persist/master/knockout.persist.js
 
 ## Usage
 
