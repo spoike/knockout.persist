@@ -11,7 +11,7 @@ describe('knockout.persist', function() {
 		var key = 'thekey', value = 'test', o;
 		
 		beforeEach(function() {
-			localStorage.clear();
+			window.localStorage.clear();
 		});
 		
 		it('should not put values on localstorage when initialized', function() {
@@ -35,6 +35,16 @@ describe('knockout.persist', function() {
 			it('should load with persisted value', function() {
 				o = ko.observable('').extend({ persist: key });
 				expect(o()).toBe(value);
+			});
+			
+		});
+		
+		describe('using arrays', function() {
+		
+			it('should be able to store array', function() {
+				o = ko.observable().extend({persist: key});
+				o([1]);
+				expect(localStorage[key]).toBe('[1]');
 			});
 			
 		});
