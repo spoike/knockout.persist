@@ -1,7 +1,7 @@
 ﻿(function(ko) {
 
     // Don't crash on browsers that are missing localStorage
-    if (typeof (localStorage) === "undefined") { return; }
+    if (typeof (localStorage) === "undefined" || !localstorage) { return; }
 
     ko.extenders.persist = function(target, key) {
 
